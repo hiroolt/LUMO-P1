@@ -1,0 +1,1295 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'uninstall',
+1 verbose cli   'pubnub' ]
+2 info using npm@3.9.5
+3 info using node@v4.4.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly uninstall loadAllDepsIntoIdealtree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly idealTree:prePrune LUMO-P1
+20 silly idealTree:prePrune ├── accepts@1.1.4
+20 silly idealTree:prePrune ├── after@0.8.1
+20 silly idealTree:prePrune ├── agentkeepalive@0.2.4
+20 silly idealTree:prePrune ├── arraybuffer.slice@0.0.6
+20 silly idealTree:prePrune ├── async@2.0.0-rc.6
+20 silly idealTree:prePrune ├── atob@1.1.3
+20 silly idealTree:prePrune ├── backo2@1.0.2
+20 silly idealTree:prePrune ├── base64-arraybuffer@0.1.2
+20 silly idealTree:prePrune ├── base64id@0.1.0
+20 silly idealTree:prePrune ├── benchmark@1.0.0
+20 silly idealTree:prePrune ├── better-assert@1.0.2
+20 silly idealTree:prePrune ├── bindings@1.2.1
+20 silly idealTree:prePrune ├── blob@0.0.4
+20 silly idealTree:prePrune ├── btoa@1.1.2
+20 silly idealTree:prePrune ├── callsite@1.0.0
+20 silly idealTree:prePrune ├── component-bind@1.0.0
+20 silly idealTree:prePrune ├── component-emitter@1.1.2
+20 silly idealTree:prePrune ├── component-inherit@0.0.3
+20 silly idealTree:prePrune ├── debug@2.2.0
+20 silly idealTree:prePrune ├─┬ engine.io-client@1.6.11
+20 silly idealTree:prePrune │ └── ws@1.0.1
+20 silly idealTree:prePrune ├─┬ engine.io-parser@1.2.4
+20 silly idealTree:prePrune │ └── has-binary@0.1.6
+20 silly idealTree:prePrune ├── engine.io@1.6.11
+20 silly idealTree:prePrune ├── fibers@1.0.13
+20 silly idealTree:prePrune ├── has-binary@0.1.7
+20 silly idealTree:prePrune ├── has-cors@1.1.0
+20 silly idealTree:prePrune ├── indexof@0.0.1
+20 silly idealTree:prePrune ├── isarray@0.0.1
+20 silly idealTree:prePrune ├── json3@3.2.6
+20 silly idealTree:prePrune ├── localStorage@1.0.3
+20 silly idealTree:prePrune ├── lodash@4.13.1
+20 silly idealTree:prePrune ├── mcp-adc@0.1.0
+20 silly idealTree:prePrune ├── mime-db@1.12.0
+20 silly idealTree:prePrune ├── mime-types@2.0.14
+20 silly idealTree:prePrune ├── ms@0.7.1
+20 silly idealTree:prePrune ├── nan@2.3.5
+20 silly idealTree:prePrune ├── negotiator@0.4.9
+20 silly idealTree:prePrune ├── object-component@0.0.3
+20 silly idealTree:prePrune ├── options@0.0.6
+20 silly idealTree:prePrune ├── parsejson@0.0.1
+20 silly idealTree:prePrune ├── parseqs@0.0.2
+20 silly idealTree:prePrune ├── parseuri@0.0.4
+20 silly idealTree:prePrune ├── q@1.4.1
+20 silly idealTree:prePrune ├── sleep@3.0.1
+20 silly idealTree:prePrune ├─┬ socket.io-adapter@0.4.0
+20 silly idealTree:prePrune │ └─┬ socket.io-parser@2.2.2
+20 silly idealTree:prePrune │   └── debug@0.7.4
+20 silly idealTree:prePrune ├─┬ socket.io-client@1.4.8
+20 silly idealTree:prePrune │ └── component-emitter@1.2.0
+20 silly idealTree:prePrune ├─┬ socket.io-parser@2.2.6
+20 silly idealTree:prePrune │ └── json3@3.3.2
+20 silly idealTree:prePrune ├── socket.io@1.4.8
+20 silly idealTree:prePrune ├── spi@0.2.0
+20 silly idealTree:prePrune ├── to-array@0.1.4
+20 silly idealTree:prePrune ├── ultron@1.0.2
+20 silly idealTree:prePrune ├── utf8@2.1.0
+20 silly idealTree:prePrune ├── wiring-pi@2.1.1
+20 silly idealTree:prePrune ├── ws@1.1.0
+20 silly idealTree:prePrune ├── xmlhttprequest-ssl@1.5.1
+20 silly idealTree:prePrune ├── xmlhttprequest@1.8.0
+20 silly idealTree:prePrune └── yeast@0.1.2
+21 silly loadIdealTree Finishing
+22 silly currentTree LUMO-P1
+22 silly currentTree ├── accepts@1.1.4
+22 silly currentTree ├── after@0.8.1
+22 silly currentTree ├── agentkeepalive@0.2.4
+22 silly currentTree ├── arraybuffer.slice@0.0.6
+22 silly currentTree ├── async@2.0.0-rc.6
+22 silly currentTree ├── atob@1.1.3
+22 silly currentTree ├── backo2@1.0.2
+22 silly currentTree ├── base64-arraybuffer@0.1.2
+22 silly currentTree ├── base64id@0.1.0
+22 silly currentTree ├── benchmark@1.0.0
+22 silly currentTree ├── better-assert@1.0.2
+22 silly currentTree ├── bindings@1.2.1
+22 silly currentTree ├── blob@0.0.4
+22 silly currentTree ├── btoa@1.1.2
+22 silly currentTree ├── callsite@1.0.0
+22 silly currentTree ├── component-bind@1.0.0
+22 silly currentTree ├── component-emitter@1.1.2
+22 silly currentTree ├── component-inherit@0.0.3
+22 silly currentTree ├── debug@2.2.0
+22 silly currentTree ├─┬ engine.io-client@1.6.11
+22 silly currentTree │ └── ws@1.0.1
+22 silly currentTree ├─┬ engine.io-parser@1.2.4
+22 silly currentTree │ └── has-binary@0.1.6
+22 silly currentTree ├── engine.io@1.6.11
+22 silly currentTree ├── fibers@1.0.13
+22 silly currentTree ├── has-binary@0.1.7
+22 silly currentTree ├── has-cors@1.1.0
+22 silly currentTree ├── indexof@0.0.1
+22 silly currentTree ├── isarray@0.0.1
+22 silly currentTree ├── json3@3.2.6
+22 silly currentTree ├── localStorage@1.0.3
+22 silly currentTree ├── lodash@4.13.1
+22 silly currentTree ├── mcp-adc@0.1.0
+22 silly currentTree ├── mime-db@1.12.0
+22 silly currentTree ├── mime-types@2.0.14
+22 silly currentTree ├── ms@0.7.1
+22 silly currentTree ├── nan@2.3.5
+22 silly currentTree ├── negotiator@0.4.9
+22 silly currentTree ├── object-component@0.0.3
+22 silly currentTree ├── options@0.0.6
+22 silly currentTree ├── parsejson@0.0.1
+22 silly currentTree ├── parseqs@0.0.2
+22 silly currentTree ├── parseuri@0.0.4
+22 silly currentTree ├── pubnub@3.15.1
+22 silly currentTree ├── q@1.4.1
+22 silly currentTree ├── sleep@3.0.1
+22 silly currentTree ├─┬ socket.io-adapter@0.4.0
+22 silly currentTree │ └─┬ socket.io-parser@2.2.2
+22 silly currentTree │   └── debug@0.7.4
+22 silly currentTree ├─┬ socket.io-client@1.4.8
+22 silly currentTree │ └── component-emitter@1.2.0
+22 silly currentTree ├─┬ socket.io-parser@2.2.6
+22 silly currentTree │ └── json3@3.3.2
+22 silly currentTree ├── socket.io@1.4.8
+22 silly currentTree ├── spi@0.2.0
+22 silly currentTree ├── to-array@0.1.4
+22 silly currentTree ├── ultron@1.0.2
+22 silly currentTree ├── utf8@2.1.0
+22 silly currentTree ├── wiring-pi@2.1.1
+22 silly currentTree ├── ws@1.1.0
+22 silly currentTree ├── xmlhttprequest-ssl@1.5.1
+22 silly currentTree ├── xmlhttprequest@1.8.0
+22 silly currentTree └── yeast@0.1.2
+23 silly idealTree LUMO-P1
+23 silly idealTree ├── accepts@1.1.4
+23 silly idealTree ├── after@0.8.1
+23 silly idealTree ├── arraybuffer.slice@0.0.6
+23 silly idealTree ├── async@2.0.0-rc.6
+23 silly idealTree ├── atob@1.1.3
+23 silly idealTree ├── backo2@1.0.2
+23 silly idealTree ├── base64-arraybuffer@0.1.2
+23 silly idealTree ├── base64id@0.1.0
+23 silly idealTree ├── benchmark@1.0.0
+23 silly idealTree ├── better-assert@1.0.2
+23 silly idealTree ├── bindings@1.2.1
+23 silly idealTree ├── blob@0.0.4
+23 silly idealTree ├── btoa@1.1.2
+23 silly idealTree ├── callsite@1.0.0
+23 silly idealTree ├── component-bind@1.0.0
+23 silly idealTree ├── component-emitter@1.1.2
+23 silly idealTree ├── component-inherit@0.0.3
+23 silly idealTree ├── debug@2.2.0
+23 silly idealTree ├─┬ engine.io-client@1.6.11
+23 silly idealTree │ └── ws@1.0.1
+23 silly idealTree ├─┬ engine.io-parser@1.2.4
+23 silly idealTree │ └── has-binary@0.1.6
+23 silly idealTree ├── engine.io@1.6.11
+23 silly idealTree ├── fibers@1.0.13
+23 silly idealTree ├── has-binary@0.1.7
+23 silly idealTree ├── has-cors@1.1.0
+23 silly idealTree ├── indexof@0.0.1
+23 silly idealTree ├── isarray@0.0.1
+23 silly idealTree ├── json3@3.2.6
+23 silly idealTree ├── localStorage@1.0.3
+23 silly idealTree ├── lodash@4.13.1
+23 silly idealTree ├── mcp-adc@0.1.0
+23 silly idealTree ├── mime-db@1.12.0
+23 silly idealTree ├── mime-types@2.0.14
+23 silly idealTree ├── ms@0.7.1
+23 silly idealTree ├── nan@2.3.5
+23 silly idealTree ├── negotiator@0.4.9
+23 silly idealTree ├── object-component@0.0.3
+23 silly idealTree ├── options@0.0.6
+23 silly idealTree ├── parsejson@0.0.1
+23 silly idealTree ├── parseqs@0.0.2
+23 silly idealTree ├── parseuri@0.0.4
+23 silly idealTree ├── q@1.4.1
+23 silly idealTree ├── sleep@3.0.1
+23 silly idealTree ├─┬ socket.io-adapter@0.4.0
+23 silly idealTree │ └─┬ socket.io-parser@2.2.2
+23 silly idealTree │   └── debug@0.7.4
+23 silly idealTree ├─┬ socket.io-client@1.4.8
+23 silly idealTree │ └── component-emitter@1.2.0
+23 silly idealTree ├─┬ socket.io-parser@2.2.6
+23 silly idealTree │ └── json3@3.3.2
+23 silly idealTree ├── socket.io@1.4.8
+23 silly idealTree ├── spi@0.2.0
+23 silly idealTree ├── to-array@0.1.4
+23 silly idealTree ├── ultron@1.0.2
+23 silly idealTree ├── utf8@2.1.0
+23 silly idealTree ├── wiring-pi@2.1.1
+23 silly idealTree ├── ws@1.1.0
+23 silly idealTree ├── xmlhttprequest-ssl@1.5.1
+23 silly idealTree ├── xmlhttprequest@1.8.0
+23 silly idealTree └── yeast@0.1.2
+24 silly generateActionsToTake Starting
+25 silly install generateActionsToTake
+26 silly generateActionsToTake Finishing
+27 silly diffTrees action count 8
+28 silly diffTrees remove agentkeepalive@0.2.4
+29 silly diffTrees update async@2.0.0-rc.6
+30 silly diffTrees update fibers@1.0.13
+31 silly diffTrees update mcp-adc@0.1.0
+32 silly diffTrees remove pubnub@3.15.1
+33 silly diffTrees update sleep@3.0.1
+34 silly diffTrees update socket.io@1.4.8
+35 silly diffTrees update wiring-pi@2.1.1
+36 silly decomposeActions action count 50
+37 silly decomposeActions remove agentkeepalive@0.2.4
+38 silly decomposeActions fetch async@2.0.0-rc.6
+39 silly decomposeActions extract async@2.0.0-rc.6
+40 silly decomposeActions test async@2.0.0-rc.6
+41 silly decomposeActions preinstall async@2.0.0-rc.6
+42 silly decomposeActions build async@2.0.0-rc.6
+43 silly decomposeActions install async@2.0.0-rc.6
+44 silly decomposeActions postinstall async@2.0.0-rc.6
+45 silly decomposeActions finalize async@2.0.0-rc.6
+46 silly decomposeActions fetch fibers@1.0.13
+47 silly decomposeActions extract fibers@1.0.13
+48 silly decomposeActions test fibers@1.0.13
+49 silly decomposeActions preinstall fibers@1.0.13
+50 silly decomposeActions build fibers@1.0.13
+51 silly decomposeActions install fibers@1.0.13
+52 silly decomposeActions postinstall fibers@1.0.13
+53 silly decomposeActions finalize fibers@1.0.13
+54 silly decomposeActions fetch mcp-adc@0.1.0
+55 silly decomposeActions extract mcp-adc@0.1.0
+56 silly decomposeActions test mcp-adc@0.1.0
+57 silly decomposeActions preinstall mcp-adc@0.1.0
+58 silly decomposeActions build mcp-adc@0.1.0
+59 silly decomposeActions install mcp-adc@0.1.0
+60 silly decomposeActions postinstall mcp-adc@0.1.0
+61 silly decomposeActions finalize mcp-adc@0.1.0
+62 silly decomposeActions remove pubnub@3.15.1
+63 silly decomposeActions fetch sleep@3.0.1
+64 silly decomposeActions extract sleep@3.0.1
+65 silly decomposeActions test sleep@3.0.1
+66 silly decomposeActions preinstall sleep@3.0.1
+67 silly decomposeActions build sleep@3.0.1
+68 silly decomposeActions install sleep@3.0.1
+69 silly decomposeActions postinstall sleep@3.0.1
+70 silly decomposeActions finalize sleep@3.0.1
+71 silly decomposeActions fetch socket.io@1.4.8
+72 silly decomposeActions extract socket.io@1.4.8
+73 silly decomposeActions test socket.io@1.4.8
+74 silly decomposeActions preinstall socket.io@1.4.8
+75 silly decomposeActions build socket.io@1.4.8
+76 silly decomposeActions install socket.io@1.4.8
+77 silly decomposeActions postinstall socket.io@1.4.8
+78 silly decomposeActions finalize socket.io@1.4.8
+79 silly decomposeActions fetch wiring-pi@2.1.1
+80 silly decomposeActions extract wiring-pi@2.1.1
+81 silly decomposeActions test wiring-pi@2.1.1
+82 silly decomposeActions preinstall wiring-pi@2.1.1
+83 silly decomposeActions build wiring-pi@2.1.1
+84 silly decomposeActions install wiring-pi@2.1.1
+85 silly decomposeActions postinstall wiring-pi@2.1.1
+86 silly decomposeActions finalize wiring-pi@2.1.1
+87 silly executeActions Starting
+88 silly install executeActions
+89 silly doSerial global-install 0
+90 silly doParallel fetch 6
+91 verbose correctMkdir /Users/HirokiSunagawa/.npm/_locks correctMkdir not in flight; initializing
+92 verbose lock using /Users/HirokiSunagawa/.npm/_locks/staging-900643cc3e7fbc4a.lock for /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging
+93 silly doParallel extract 6
+94 silly extract async@2.0.0-rc.6
+95 silly extract fibers@1.0.13
+96 silly extract mcp-adc@0.1.0
+97 silly extract sleep@3.0.1
+98 silly extract socket.io@1.4.8
+99 silly extract wiring-pi@2.1.1
+100 silly addNamed fibers@1.0.13
+101 verbose addNamed "1.0.13" is a plain semver version for fibers
+102 silly mapToRegistry name fibers
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry data Result {
+105 silly mapToRegistry   raw: 'fibers',
+105 silly mapToRegistry   scope: null,
+105 silly mapToRegistry   name: 'fibers',
+105 silly mapToRegistry   rawSpec: '',
+105 silly mapToRegistry   spec: 'latest',
+105 silly mapToRegistry   type: 'tag' }
+106 silly mapToRegistry uri https://registry.npmjs.org/fibers
+107 verbose addNameVersion registry:https://registry.npmjs.org/fibers not in flight; fetching
+108 silly addNamed async@2.0.0-rc.6
+109 verbose addNamed "2.0.0-rc.6" is a plain semver version for async
+110 silly mapToRegistry name async
+111 silly mapToRegistry using default registry
+112 silly mapToRegistry registry https://registry.npmjs.org/
+113 silly mapToRegistry data Result {
+113 silly mapToRegistry   raw: 'async',
+113 silly mapToRegistry   scope: null,
+113 silly mapToRegistry   name: 'async',
+113 silly mapToRegistry   rawSpec: '',
+113 silly mapToRegistry   spec: 'latest',
+113 silly mapToRegistry   type: 'tag' }
+114 silly mapToRegistry uri https://registry.npmjs.org/async
+115 verbose addNameVersion registry:https://registry.npmjs.org/async not in flight; fetching
+116 silly addNamed sleep@3.0.1
+117 verbose addNamed "3.0.1" is a plain semver version for sleep
+118 silly mapToRegistry name sleep
+119 silly mapToRegistry using default registry
+120 silly mapToRegistry registry https://registry.npmjs.org/
+121 silly mapToRegistry data Result {
+121 silly mapToRegistry   raw: 'sleep',
+121 silly mapToRegistry   scope: null,
+121 silly mapToRegistry   name: 'sleep',
+121 silly mapToRegistry   rawSpec: '',
+121 silly mapToRegistry   spec: 'latest',
+121 silly mapToRegistry   type: 'tag' }
+122 silly mapToRegistry uri https://registry.npmjs.org/sleep
+123 verbose addNameVersion registry:https://registry.npmjs.org/sleep not in flight; fetching
+124 verbose request uri https://registry.npmjs.org/fibers
+125 verbose request no auth needed
+126 info attempt registry request try #1 at 2:38:19 PM
+127 verbose request id 38087087cc30fde7
+128 http request GET https://registry.npmjs.org/fibers
+129 verbose request uri https://registry.npmjs.org/sleep
+130 verbose request no auth needed
+131 info attempt registry request try #1 at 2:38:20 PM
+132 http request GET https://registry.npmjs.org/sleep
+133 silly addNamed wiring-pi@2.1.1
+134 verbose addNamed "2.1.1" is a plain semver version for wiring-pi
+135 silly mapToRegistry name wiring-pi
+136 silly mapToRegistry using default registry
+137 silly mapToRegistry registry https://registry.npmjs.org/
+138 silly mapToRegistry data Result {
+138 silly mapToRegistry   raw: 'wiring-pi',
+138 silly mapToRegistry   scope: null,
+138 silly mapToRegistry   name: 'wiring-pi',
+138 silly mapToRegistry   rawSpec: '',
+138 silly mapToRegistry   spec: 'latest',
+138 silly mapToRegistry   type: 'tag' }
+139 silly mapToRegistry uri https://registry.npmjs.org/wiring-pi
+140 verbose addNameVersion registry:https://registry.npmjs.org/wiring-pi not in flight; fetching
+141 silly addNamed socket.io@1.4.8
+142 verbose addNamed "1.4.8" is a plain semver version for socket.io
+143 silly mapToRegistry name socket.io
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry data Result {
+146 silly mapToRegistry   raw: 'socket.io',
+146 silly mapToRegistry   scope: null,
+146 silly mapToRegistry   name: 'socket.io',
+146 silly mapToRegistry   rawSpec: '',
+146 silly mapToRegistry   spec: 'latest',
+146 silly mapToRegistry   type: 'tag' }
+147 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+148 verbose addNameVersion registry:https://registry.npmjs.org/socket.io not in flight; fetching
+149 verbose request uri https://registry.npmjs.org/wiring-pi
+150 verbose request no auth needed
+151 info attempt registry request try #1 at 2:38:20 PM
+152 http request GET https://registry.npmjs.org/wiring-pi
+153 verbose unbuild node_modules/.staging/mcp-adc-0d76f1a2
+154 verbose request uri https://registry.npmjs.org/async
+155 verbose request no auth needed
+156 info attempt registry request try #1 at 2:38:20 PM
+157 verbose etag "6PBHZBE2UP06KCT2SERD80QXP"
+158 http request GET https://registry.npmjs.org/async
+159 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/mcp-adc-0d76f1a2 is being purged from base /Users/HirokiSunagawa/Work/LUMO-P1
+160 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/mcp-adc-0d76f1a2
+161 verbose request uri https://registry.npmjs.org/socket.io
+162 verbose request no auth needed
+163 info attempt registry request try #1 at 2:38:20 PM
+164 verbose etag "54THQCVUDP4MN631S49GCO8H"
+165 http request GET https://registry.npmjs.org/socket.io
+166 verbose tar unpack /Users/HirokiSunagawa/.npm/mcp-adc/0.1.0/package.tgz
+167 verbose tar unpacking to /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/mcp-adc-0d76f1a2
+168 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/mcp-adc-0d76f1a2 is being purged
+169 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/mcp-adc-0d76f1a2
+170 silly gunzTarPerm modes [ '755', '644' ]
+171 silly gunzTarPerm extractEntry package.json
+172 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+173 silly gunzTarPerm extractEntry README.md
+174 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+175 silly gunzTarPerm extractEntry LICENSE
+176 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+177 silly gunzTarPerm extractEntry mcp-adc.js
+178 silly gunzTarPerm modified mode [ 'mcp-adc.js', 436, 420 ]
+179 silly gunzTarPerm extractEntry .idea/.name
+180 silly gunzTarPerm modified mode [ '.idea/.name', 436, 420 ]
+181 silly gunzTarPerm extractEntry .idea/compiler.xml
+182 silly gunzTarPerm modified mode [ '.idea/compiler.xml', 436, 420 ]
+183 silly gunzTarPerm extractEntry .idea/copyright/profiles_settings.xml
+184 silly gunzTarPerm modified mode [ '.idea/copyright/profiles_settings.xml', 436, 420 ]
+185 silly gunzTarPerm extractEntry .idea/encodings.xml
+186 silly gunzTarPerm modified mode [ '.idea/encodings.xml', 436, 420 ]
+187 silly gunzTarPerm extractEntry .idea/misc.xml
+188 silly gunzTarPerm modified mode [ '.idea/misc.xml', 436, 420 ]
+189 silly gunzTarPerm extractEntry .idea/modules.xml
+190 silly gunzTarPerm modified mode [ '.idea/modules.xml', 436, 420 ]
+191 silly gunzTarPerm extractEntry .idea/vcs.xml
+192 silly gunzTarPerm modified mode [ '.idea/vcs.xml', 436, 420 ]
+193 silly gunzTarPerm extractEntry .idea/workspace.xml
+194 silly gunzTarPerm modified mode [ '.idea/workspace.xml', 436, 420 ]
+195 silly gunzTarPerm extractEntry mcp-adc.iml
+196 silly gunzTarPerm modified mode [ 'mcp-adc.iml', 436, 420 ]
+197 http 200 https://registry.npmjs.org/sleep
+198 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+198 verbose headers   etag: '"8IEFEDYWYB38NP701Z30947N8"',
+198 verbose headers   'content-type': 'application/json',
+198 verbose headers   'content-encoding': 'gzip',
+198 verbose headers   'cache-control': 'max-age=300',
+198 verbose headers   'content-length': '2755',
+198 verbose headers   'accept-ranges': 'bytes',
+198 verbose headers   date: 'Wed, 10 Aug 2016 11:38:20 GMT',
+198 verbose headers   via: '1.1 varnish',
+198 verbose headers   age: '176',
+198 verbose headers   connection: 'keep-alive',
+198 verbose headers   'x-served-by': 'cache-bma7033-BMA',
+198 verbose headers   'x-cache': 'HIT',
+198 verbose headers   'x-cache-hits': '1',
+198 verbose headers   'x-timer': 'S1470829100.078851,VS0,VE0',
+198 verbose headers   vary: 'Accept-Encoding' }
+199 silly get cb [ 200,
+199 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+199 silly get     etag: '"8IEFEDYWYB38NP701Z30947N8"',
+199 silly get     'content-type': 'application/json',
+199 silly get     'content-encoding': 'gzip',
+199 silly get     'cache-control': 'max-age=300',
+199 silly get     'content-length': '2755',
+199 silly get     'accept-ranges': 'bytes',
+199 silly get     date: 'Wed, 10 Aug 2016 11:38:20 GMT',
+199 silly get     via: '1.1 varnish',
+199 silly get     age: '176',
+199 silly get     connection: 'keep-alive',
+199 silly get     'x-served-by': 'cache-bma7033-BMA',
+199 silly get     'x-cache': 'HIT',
+199 silly get     'x-cache-hits': '1',
+199 silly get     'x-timer': 'S1470829100.078851,VS0,VE0',
+199 silly get     vary: 'Accept-Encoding' } ]
+200 verbose get saving sleep to /Users/HirokiSunagawa/.npm/registry.npmjs.org/sleep/.cache.json
+201 verbose correctMkdir /Users/HirokiSunagawa/.npm correctMkdir not in flight; initializing
+202 http 200 https://registry.npmjs.org/fibers
+203 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+203 verbose headers   etag: '"BHGUA1LB590EWCJ7L92NUZHU9"',
+203 verbose headers   'content-type': 'application/json',
+203 verbose headers   'content-encoding': 'gzip',
+203 verbose headers   'cache-control': 'max-age=300',
+203 verbose headers   'content-length': '12877',
+203 verbose headers   'accept-ranges': 'bytes',
+203 verbose headers   date: 'Wed, 10 Aug 2016 11:38:20 GMT',
+203 verbose headers   via: '1.1 varnish',
+203 verbose headers   age: '32',
+203 verbose headers   connection: 'keep-alive',
+203 verbose headers   'x-served-by': 'cache-bma7025-BMA',
+203 verbose headers   'x-cache': 'HIT',
+203 verbose headers   'x-cache-hits': '1',
+203 verbose headers   'x-timer': 'S1470829100.073034,VS0,VE0',
+203 verbose headers   vary: 'Accept-Encoding' }
+204 silly get cb [ 200,
+204 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+204 silly get     etag: '"BHGUA1LB590EWCJ7L92NUZHU9"',
+204 silly get     'content-type': 'application/json',
+204 silly get     'content-encoding': 'gzip',
+204 silly get     'cache-control': 'max-age=300',
+204 silly get     'content-length': '12877',
+204 silly get     'accept-ranges': 'bytes',
+204 silly get     date: 'Wed, 10 Aug 2016 11:38:20 GMT',
+204 silly get     via: '1.1 varnish',
+204 silly get     age: '32',
+204 silly get     connection: 'keep-alive',
+204 silly get     'x-served-by': 'cache-bma7025-BMA',
+204 silly get     'x-cache': 'HIT',
+204 silly get     'x-cache-hits': '1',
+204 silly get     'x-timer': 'S1470829100.073034,VS0,VE0',
+204 silly get     vary: 'Accept-Encoding' } ]
+205 verbose get saving fibers to /Users/HirokiSunagawa/.npm/registry.npmjs.org/fibers/.cache.json
+206 verbose correctMkdir /Users/HirokiSunagawa/.npm correctMkdir not in flight; initializing
+207 silly mapToRegistry name fibers
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry https://registry.npmjs.org/
+210 silly mapToRegistry data Result {
+210 silly mapToRegistry   raw: 'fibers',
+210 silly mapToRegistry   scope: null,
+210 silly mapToRegistry   name: 'fibers',
+210 silly mapToRegistry   rawSpec: '',
+210 silly mapToRegistry   spec: 'latest',
+210 silly mapToRegistry   type: 'tag' }
+211 silly mapToRegistry uri https://registry.npmjs.org/fibers
+212 verbose addRemoteTarball https://registry.npmjs.org/fibers/-/fibers-1.0.13.tgz not in flight; adding
+213 verbose addRemoteTarball [ 'https://registry.npmjs.org/fibers/-/fibers-1.0.13.tgz',
+213 verbose addRemoteTarball   '35e0aba17ad9f8cea35f712ef8cc445470f0740d' ]
+214 silly mapToRegistry name sleep
+215 silly mapToRegistry using default registry
+216 silly mapToRegistry registry https://registry.npmjs.org/
+217 silly mapToRegistry data Result {
+217 silly mapToRegistry   raw: 'sleep',
+217 silly mapToRegistry   scope: null,
+217 silly mapToRegistry   name: 'sleep',
+217 silly mapToRegistry   rawSpec: '',
+217 silly mapToRegistry   spec: 'latest',
+217 silly mapToRegistry   type: 'tag' }
+218 silly mapToRegistry uri https://registry.npmjs.org/sleep
+219 verbose addRemoteTarball https://registry.npmjs.org/sleep/-/sleep-3.0.1.tgz not in flight; adding
+220 verbose addRemoteTarball [ 'https://registry.npmjs.org/sleep/-/sleep-3.0.1.tgz',
+220 verbose addRemoteTarball   'be4d17c579360e07e04ed8172ba2b10a69054df3' ]
+221 info retry fetch attempt 1 at 2:38:20 PM
+222 info attempt registry request try #1 at 2:38:20 PM
+223 http fetch GET https://registry.npmjs.org/fibers/-/fibers-1.0.13.tgz
+224 info retry fetch attempt 1 at 2:38:20 PM
+225 info attempt registry request try #1 at 2:38:20 PM
+226 http fetch GET https://registry.npmjs.org/sleep/-/sleep-3.0.1.tgz
+227 http 200 https://registry.npmjs.org/async
+228 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+228 verbose headers   etag: '"8LCJNIQLWMS6KPA0DQX611N8B"',
+228 verbose headers   'content-type': 'application/json',
+228 verbose headers   'content-encoding': 'gzip',
+228 verbose headers   'cache-control': 'max-age=300',
+228 verbose headers   'content-length': '16759',
+228 verbose headers   'accept-ranges': 'bytes',
+228 verbose headers   date: 'Wed, 10 Aug 2016 11:38:20 GMT',
+228 verbose headers   via: '1.1 varnish',
+228 verbose headers   age: '159',
+228 verbose headers   connection: 'keep-alive',
+228 verbose headers   'x-served-by': 'cache-bma7024-BMA',
+228 verbose headers   'x-cache': 'HIT',
+228 verbose headers   'x-cache-hits': '21',
+228 verbose headers   'x-timer': 'S1470829100.088928,VS0,VE0',
+228 verbose headers   vary: 'Accept-Encoding' }
+229 silly get cb [ 200,
+229 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+229 silly get     etag: '"8LCJNIQLWMS6KPA0DQX611N8B"',
+229 silly get     'content-type': 'application/json',
+229 silly get     'content-encoding': 'gzip',
+229 silly get     'cache-control': 'max-age=300',
+229 silly get     'content-length': '16759',
+229 silly get     'accept-ranges': 'bytes',
+229 silly get     date: 'Wed, 10 Aug 2016 11:38:20 GMT',
+229 silly get     via: '1.1 varnish',
+229 silly get     age: '159',
+229 silly get     connection: 'keep-alive',
+229 silly get     'x-served-by': 'cache-bma7024-BMA',
+229 silly get     'x-cache': 'HIT',
+229 silly get     'x-cache-hits': '21',
+229 silly get     'x-timer': 'S1470829100.088928,VS0,VE0',
+229 silly get     vary: 'Accept-Encoding' } ]
+230 verbose get saving async to /Users/HirokiSunagawa/.npm/registry.npmjs.org/async/.cache.json
+231 verbose correctMkdir /Users/HirokiSunagawa/.npm correctMkdir not in flight; initializing
+232 http fetch 200 https://registry.npmjs.org/fibers/-/fibers-1.0.13.tgz
+233 http fetch 200 https://registry.npmjs.org/sleep/-/sleep-3.0.1.tgz
+234 http 200 https://registry.npmjs.org/socket.io
+235 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+235 verbose headers   etag: '"SD35X0DCRULGT4PW2X8QH50F"',
+235 verbose headers   'content-type': 'application/json',
+235 verbose headers   'content-encoding': 'gzip',
+235 verbose headers   'cache-control': 'max-age=300',
+235 verbose headers   'content-length': '20205',
+235 verbose headers   'accept-ranges': 'bytes',
+235 verbose headers   date: 'Wed, 10 Aug 2016 11:38:20 GMT',
+235 verbose headers   via: '1.1 varnish',
+235 verbose headers   age: '256',
+235 verbose headers   connection: 'keep-alive',
+235 verbose headers   'x-served-by': 'cache-bma7033-BMA',
+235 verbose headers   'x-cache': 'HIT',
+235 verbose headers   'x-cache-hits': '4',
+235 verbose headers   'x-timer': 'S1470829100.099887,VS0,VE0',
+235 verbose headers   vary: 'Accept-Encoding' }
+236 silly get cb [ 200,
+236 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+236 silly get     etag: '"SD35X0DCRULGT4PW2X8QH50F"',
+236 silly get     'content-type': 'application/json',
+236 silly get     'content-encoding': 'gzip',
+236 silly get     'cache-control': 'max-age=300',
+236 silly get     'content-length': '20205',
+236 silly get     'accept-ranges': 'bytes',
+236 silly get     date: 'Wed, 10 Aug 2016 11:38:20 GMT',
+236 silly get     via: '1.1 varnish',
+236 silly get     age: '256',
+236 silly get     connection: 'keep-alive',
+236 silly get     'x-served-by': 'cache-bma7033-BMA',
+236 silly get     'x-cache': 'HIT',
+236 silly get     'x-cache-hits': '4',
+236 silly get     'x-timer': 'S1470829100.099887,VS0,VE0',
+236 silly get     vary: 'Accept-Encoding' } ]
+237 verbose get saving socket.io to /Users/HirokiSunagawa/.npm/registry.npmjs.org/socket.io/.cache.json
+238 verbose correctMkdir /Users/HirokiSunagawa/.npm correctMkdir not in flight; initializing
+239 silly mapToRegistry name async
+240 silly mapToRegistry using default registry
+241 silly mapToRegistry registry https://registry.npmjs.org/
+242 silly mapToRegistry data Result {
+242 silly mapToRegistry   raw: 'async',
+242 silly mapToRegistry   scope: null,
+242 silly mapToRegistry   name: 'async',
+242 silly mapToRegistry   rawSpec: '',
+242 silly mapToRegistry   spec: 'latest',
+242 silly mapToRegistry   type: 'tag' }
+243 silly mapToRegistry uri https://registry.npmjs.org/async
+244 verbose addRemoteTarball https://registry.npmjs.org/async/-/async-2.0.0-rc.6.tgz not in flight; adding
+245 verbose addRemoteTarball [ 'https://registry.npmjs.org/async/-/async-2.0.0-rc.6.tgz',
+245 verbose addRemoteTarball   '978fc4155d1fc30b8b58fc3f020102b2da02f2a4' ]
+246 silly fetchAndShaCheck shasum be4d17c579360e07e04ed8172ba2b10a69054df3
+247 info retry fetch attempt 1 at 2:38:20 PM
+248 info attempt registry request try #1 at 2:38:20 PM
+249 http fetch GET https://registry.npmjs.org/async/-/async-2.0.0-rc.6.tgz
+250 verbose addTmpTarball /var/folders/4z/mzwx4fv14z17kl_472_mrjlr0000gn/T/npm-11952-f646dbc6/registry.npmjs.org/sleep/-/sleep-3.0.1.tgz not in flight; adding
+251 verbose addTmpTarball already have metadata; skipping unpack for sleep@3.0.1
+252 verbose correctMkdir /Users/HirokiSunagawa/.npm correctMkdir not in flight; initializing
+253 silly mapToRegistry name socket.io
+254 silly mapToRegistry using default registry
+255 silly mapToRegistry registry https://registry.npmjs.org/
+256 silly mapToRegistry data Result {
+256 silly mapToRegistry   raw: 'socket.io',
+256 silly mapToRegistry   scope: null,
+256 silly mapToRegistry   name: 'socket.io',
+256 silly mapToRegistry   rawSpec: '',
+256 silly mapToRegistry   spec: 'latest',
+256 silly mapToRegistry   type: 'tag' }
+257 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+258 verbose addRemoteTarball https://registry.npmjs.org/socket.io/-/socket.io-1.4.8.tgz not in flight; adding
+259 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io/-/socket.io-1.4.8.tgz',
+259 verbose addRemoteTarball   'e576f330cd0bed64e55b3fd26df991141884867b' ]
+260 info retry fetch attempt 1 at 2:38:20 PM
+261 info attempt registry request try #1 at 2:38:20 PM
+262 http fetch GET https://registry.npmjs.org/socket.io/-/socket.io-1.4.8.tgz
+263 verbose unbuild node_modules/.staging/sleep-cae76961
+264 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/sleep-cae76961 is being purged from base /Users/HirokiSunagawa/Work/LUMO-P1
+265 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/sleep-cae76961
+266 verbose tar unpack /Users/HirokiSunagawa/.npm/sleep/3.0.1/package.tgz
+267 verbose tar unpacking to /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/sleep-cae76961
+268 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/sleep-cae76961 is being purged
+269 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/sleep-cae76961
+270 silly gunzTarPerm modes [ '755', '644' ]
+271 http fetch 200 https://registry.npmjs.org/async/-/async-2.0.0-rc.6.tgz
+272 silly gunzTarPerm extractEntry package.json
+273 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+274 silly gunzTarPerm extractEntry .npmignore
+275 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+276 silly gunzTarPerm extractEntry README.md
+277 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+278 http fetch 200 https://registry.npmjs.org/socket.io/-/socket.io-1.4.8.tgz
+279 silly fetchAndShaCheck shasum e576f330cd0bed64e55b3fd26df991141884867b
+280 verbose addTmpTarball /var/folders/4z/mzwx4fv14z17kl_472_mrjlr0000gn/T/npm-11952-f646dbc6/registry.npmjs.org/socket.io/-/socket.io-1.4.8.tgz not in flight; adding
+281 verbose addTmpTarball already have metadata; skipping unpack for socket.io@1.4.8
+282 verbose correctMkdir /Users/HirokiSunagawa/.npm correctMkdir not in flight; initializing
+283 silly gunzTarPerm extractEntry index.js
+284 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+285 silly gunzTarPerm extractEntry test.js
+286 silly gunzTarPerm modified mode [ 'test.js', 436, 420 ]
+287 silly gunzTarPerm extractEntry LICENSE.txt
+288 silly gunzTarPerm modified mode [ 'LICENSE.txt', 436, 420 ]
+289 silly gunzTarPerm extractEntry binding.gyp
+290 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+291 silly gunzTarPerm extractEntry sleep.cc
+292 silly gunzTarPerm modified mode [ 'sleep.cc', 436, 420 ]
+293 verbose unbuild node_modules/.staging/socket.io-67eff514
+294 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/socket.io-67eff514 is being purged from base /Users/HirokiSunagawa/Work/LUMO-P1
+295 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/socket.io-67eff514
+296 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/mcp-adc-0d76f1a2/node_modules is being purged
+297 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/mcp-adc-0d76f1a2/node_modules
+298 verbose tar unpack /Users/HirokiSunagawa/.npm/socket.io/1.4.8/package.tgz
+299 verbose tar unpacking to /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/socket.io-67eff514
+300 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/socket.io-67eff514 is being purged
+301 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/socket.io-67eff514
+302 silly gunzTarPerm modes [ '755', '644' ]
+303 silly gunzTarPerm extractEntry package.json
+304 silly gunzTarPerm extractEntry .npmignore
+305 silly gunzTarPerm extractEntry LICENSE
+306 silly gunzTarPerm extractEntry .travis.yml
+307 silly gunzTarPerm extractEntry History.md
+308 silly gunzTarPerm extractEntry Makefile
+309 silly gunzTarPerm extractEntry Readme.md
+310 silly gunzTarPerm extractEntry lib/client.js
+311 silly gunzTarPerm extractEntry lib/index.js
+312 silly gunzTarPerm extractEntry lib/namespace.js
+313 silly gunzTarPerm extractEntry lib/socket.js
+314 silly fetchAndShaCheck shasum 978fc4155d1fc30b8b58fc3f020102b2da02f2a4
+315 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/sleep-cae76961/node_modules is being purged
+316 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/sleep-cae76961/node_modules
+317 verbose addTmpTarball /var/folders/4z/mzwx4fv14z17kl_472_mrjlr0000gn/T/npm-11952-f646dbc6/registry.npmjs.org/async/-/async-2.0.0-rc.6.tgz not in flight; adding
+318 verbose addTmpTarball already have metadata; skipping unpack for async@2.0.0-rc.6
+319 verbose correctMkdir /Users/HirokiSunagawa/.npm correctMkdir not in flight; initializing
+320 verbose unbuild node_modules/.staging/async-559448cc
+321 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/async-559448cc is being purged from base /Users/HirokiSunagawa/Work/LUMO-P1
+322 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/async-559448cc
+323 verbose tar unpack /Users/HirokiSunagawa/.npm/async/2.0.0-rc.6/package.tgz
+324 verbose tar unpacking to /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/async-559448cc
+325 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/async-559448cc is being purged
+326 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/async-559448cc
+327 silly gunzTarPerm modes [ '755', '644' ]
+328 silly gunzTarPerm extractEntry package.json
+329 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+330 silly gunzTarPerm extractEntry README.md
+331 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+332 silly gunzTarPerm extractEntry LICENSE
+333 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+334 silly gunzTarPerm extractEntry filterSeries.js
+335 silly gunzTarPerm modified mode [ 'filterSeries.js', 436, 420 ]
+336 silly gunzTarPerm extractEntry forever.js
+337 silly gunzTarPerm modified mode [ 'forever.js', 436, 420 ]
+338 silly gunzTarPerm extractEntry index.js
+339 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+340 silly gunzTarPerm extractEntry eachOfSeries.js
+341 silly gunzTarPerm modified mode [ 'eachOfSeries.js', 436, 420 ]
+342 silly gunzTarPerm extractEntry filterLimit.js
+343 silly gunzTarPerm modified mode [ 'filterLimit.js', 436, 420 ]
+344 silly gunzTarPerm extractEntry log.js
+345 silly gunzTarPerm modified mode [ 'log.js', 436, 420 ]
+346 silly gunzTarPerm extractEntry map.js
+347 silly gunzTarPerm modified mode [ 'map.js', 436, 420 ]
+348 silly gunzTarPerm extractEntry mapLimit.js
+349 silly gunzTarPerm modified mode [ 'mapLimit.js', 436, 420 ]
+350 silly gunzTarPerm extractEntry mapSeries.js
+351 silly gunzTarPerm modified mode [ 'mapSeries.js', 436, 420 ]
+352 http 200 https://registry.npmjs.org/wiring-pi
+353 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+353 verbose headers   etag: '"2H6QKDZK0DTTIOO5LZGZKFD4T"',
+353 verbose headers   'content-type': 'application/json',
+353 verbose headers   'content-encoding': 'gzip',
+353 verbose headers   'cache-control': 'max-age=300',
+353 verbose headers   'content-length': '2768',
+353 verbose headers   'accept-ranges': 'bytes',
+353 verbose headers   date: 'Wed, 10 Aug 2016 11:38:20 GMT',
+353 verbose headers   via: '1.1 varnish',
+353 verbose headers   age: '0',
+353 verbose headers   connection: 'keep-alive',
+353 verbose headers   'x-served-by': 'cache-bma7031-BMA',
+353 verbose headers   'x-cache': 'MISS',
+353 verbose headers   'x-cache-hits': '0',
+353 verbose headers   'x-timer': 'S1470829100.069972,VS0,VE137',
+353 verbose headers   vary: 'Accept-Encoding' }
+354 silly get cb [ 200,
+354 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+354 silly get     etag: '"2H6QKDZK0DTTIOO5LZGZKFD4T"',
+354 silly get     'content-type': 'application/json',
+354 silly get     'content-encoding': 'gzip',
+354 silly get     'cache-control': 'max-age=300',
+354 silly get     'content-length': '2768',
+354 silly get     'accept-ranges': 'bytes',
+354 silly get     date: 'Wed, 10 Aug 2016 11:38:20 GMT',
+354 silly get     via: '1.1 varnish',
+354 silly get     age: '0',
+354 silly get     connection: 'keep-alive',
+354 silly get     'x-served-by': 'cache-bma7031-BMA',
+354 silly get     'x-cache': 'MISS',
+354 silly get     'x-cache-hits': '0',
+354 silly get     'x-timer': 'S1470829100.069972,VS0,VE137',
+354 silly get     vary: 'Accept-Encoding' } ]
+355 verbose get saving wiring-pi to /Users/HirokiSunagawa/.npm/registry.npmjs.org/wiring-pi/.cache.json
+356 verbose correctMkdir /Users/HirokiSunagawa/.npm correctMkdir not in flight; initializing
+357 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/socket.io-67eff514/node_modules is being purged
+358 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/socket.io-67eff514/node_modules
+359 silly gunzTarPerm extractEntry mapValues.js
+360 silly gunzTarPerm modified mode [ 'mapValues.js', 436, 420 ]
+361 silly gunzTarPerm extractEntry filter.js
+362 silly gunzTarPerm modified mode [ 'filter.js', 436, 420 ]
+363 silly mapToRegistry name wiring-pi
+364 silly mapToRegistry using default registry
+365 silly mapToRegistry registry https://registry.npmjs.org/
+366 silly mapToRegistry data Result {
+366 silly mapToRegistry   raw: 'wiring-pi',
+366 silly mapToRegistry   scope: null,
+366 silly mapToRegistry   name: 'wiring-pi',
+366 silly mapToRegistry   rawSpec: '',
+366 silly mapToRegistry   spec: 'latest',
+366 silly mapToRegistry   type: 'tag' }
+367 silly mapToRegistry uri https://registry.npmjs.org/wiring-pi
+368 verbose addRemoteTarball https://registry.npmjs.org/wiring-pi/-/wiring-pi-2.1.1.tgz not in flight; adding
+369 verbose addRemoteTarball [ 'https://registry.npmjs.org/wiring-pi/-/wiring-pi-2.1.1.tgz',
+369 verbose addRemoteTarball   'fc9414651361101560d210f8fa0fb797c0ab7df0' ]
+370 info retry fetch attempt 1 at 2:38:20 PM
+371 info attempt registry request try #1 at 2:38:20 PM
+372 http fetch GET https://registry.npmjs.org/wiring-pi/-/wiring-pi-2.1.1.tgz
+373 silly gunzTarPerm extractEntry mapValuesLimit.js
+374 silly gunzTarPerm modified mode [ 'mapValuesLimit.js', 436, 420 ]
+375 silly gunzTarPerm extractEntry everySeries.js
+376 silly gunzTarPerm modified mode [ 'everySeries.js', 436, 420 ]
+377 silly gunzTarPerm extractEntry mapValuesSeries.js
+378 silly gunzTarPerm modified mode [ 'mapValuesSeries.js', 436, 420 ]
+379 silly gunzTarPerm extractEntry everyLimit.js
+380 silly gunzTarPerm modified mode [ 'everyLimit.js', 436, 420 ]
+381 silly gunzTarPerm extractEntry memoize.js
+382 silly gunzTarPerm modified mode [ 'memoize.js', 436, 420 ]
+383 silly gunzTarPerm extractEntry every.js
+384 silly gunzTarPerm modified mode [ 'every.js', 436, 420 ]
+385 silly gunzTarPerm extractEntry nextTick.js
+386 silly gunzTarPerm modified mode [ 'nextTick.js', 436, 420 ]
+387 silly gunzTarPerm extractEntry ensureAsync.js
+388 silly gunzTarPerm modified mode [ 'ensureAsync.js', 436, 420 ]
+389 silly gunzTarPerm extractEntry eachSeries.js
+390 silly gunzTarPerm modified mode [ 'eachSeries.js', 436, 420 ]
+391 silly gunzTarPerm extractEntry eachOfLimit.js
+392 silly gunzTarPerm modified mode [ 'eachOfLimit.js', 436, 420 ]
+393 silly gunzTarPerm extractEntry parallel.js
+394 silly gunzTarPerm modified mode [ 'parallel.js', 436, 420 ]
+395 silly gunzTarPerm extractEntry eachOf.js
+396 silly gunzTarPerm modified mode [ 'eachOf.js', 436, 420 ]
+397 silly gunzTarPerm extractEntry parallelLimit.js
+398 silly gunzTarPerm modified mode [ 'parallelLimit.js', 436, 420 ]
+399 silly gunzTarPerm extractEntry eachLimit.js
+400 silly gunzTarPerm modified mode [ 'eachLimit.js', 436, 420 ]
+401 silly gunzTarPerm extractEntry priorityQueue.js
+402 silly gunzTarPerm modified mode [ 'priorityQueue.js', 436, 420 ]
+403 silly gunzTarPerm extractEntry each.js
+404 silly gunzTarPerm modified mode [ 'each.js', 436, 420 ]
+405 silly gunzTarPerm extractEntry queue.js
+406 silly gunzTarPerm modified mode [ 'queue.js', 436, 420 ]
+407 silly gunzTarPerm extractEntry during.js
+408 silly gunzTarPerm modified mode [ 'during.js', 436, 420 ]
+409 silly gunzTarPerm extractEntry race.js
+410 silly gunzTarPerm modified mode [ 'race.js', 436, 420 ]
+411 silly gunzTarPerm extractEntry doWhilst.js
+412 silly gunzTarPerm modified mode [ 'doWhilst.js', 436, 420 ]
+413 silly gunzTarPerm extractEntry reduce.js
+414 silly gunzTarPerm modified mode [ 'reduce.js', 436, 420 ]
+415 silly gunzTarPerm extractEntry doUntil.js
+416 silly gunzTarPerm modified mode [ 'doUntil.js', 436, 420 ]
+417 silly gunzTarPerm extractEntry reduceRight.js
+418 silly gunzTarPerm modified mode [ 'reduceRight.js', 436, 420 ]
+419 silly gunzTarPerm extractEntry doDuring.js
+420 silly gunzTarPerm modified mode [ 'doDuring.js', 436, 420 ]
+421 silly gunzTarPerm extractEntry reflect.js
+422 silly gunzTarPerm modified mode [ 'reflect.js', 436, 420 ]
+423 silly gunzTarPerm extractEntry until.js
+424 silly gunzTarPerm modified mode [ 'until.js', 436, 420 ]
+425 silly gunzTarPerm extractEntry reflectAll.js
+426 silly gunzTarPerm modified mode [ 'reflectAll.js', 436, 420 ]
+427 silly gunzTarPerm extractEntry dir.js
+428 silly gunzTarPerm modified mode [ 'dir.js', 436, 420 ]
+429 silly gunzTarPerm extractEntry reject.js
+430 silly gunzTarPerm modified mode [ 'reject.js', 436, 420 ]
+431 silly gunzTarPerm extractEntry detectSeries.js
+432 silly gunzTarPerm modified mode [ 'detectSeries.js', 436, 420 ]
+433 silly gunzTarPerm extractEntry rejectLimit.js
+434 silly gunzTarPerm modified mode [ 'rejectLimit.js', 436, 420 ]
+435 silly gunzTarPerm extractEntry detectLimit.js
+436 silly gunzTarPerm modified mode [ 'detectLimit.js', 436, 420 ]
+437 silly gunzTarPerm extractEntry rejectSeries.js
+438 silly gunzTarPerm modified mode [ 'rejectSeries.js', 436, 420 ]
+439 silly gunzTarPerm extractEntry detect.js
+440 silly gunzTarPerm modified mode [ 'detect.js', 436, 420 ]
+441 silly gunzTarPerm extractEntry retry.js
+442 silly gunzTarPerm modified mode [ 'retry.js', 436, 420 ]
+443 silly gunzTarPerm extractEntry constant.js
+444 silly gunzTarPerm modified mode [ 'constant.js', 436, 420 ]
+445 silly gunzTarPerm extractEntry retryable.js
+446 silly gunzTarPerm modified mode [ 'retryable.js', 436, 420 ]
+447 silly gunzTarPerm extractEntry concatSeries.js
+448 silly gunzTarPerm modified mode [ 'concatSeries.js', 436, 420 ]
+449 silly gunzTarPerm extractEntry seq.js
+450 silly gunzTarPerm modified mode [ 'seq.js', 436, 420 ]
+451 silly gunzTarPerm extractEntry concat.js
+452 silly gunzTarPerm modified mode [ 'concat.js', 436, 420 ]
+453 silly gunzTarPerm extractEntry series.js
+454 silly gunzTarPerm modified mode [ 'series.js', 436, 420 ]
+455 silly gunzTarPerm extractEntry compose.js
+456 silly gunzTarPerm modified mode [ 'compose.js', 436, 420 ]
+457 silly gunzTarPerm extractEntry setImmediate.js
+458 silly gunzTarPerm modified mode [ 'setImmediate.js', 436, 420 ]
+459 silly gunzTarPerm extractEntry cargo.js
+460 silly gunzTarPerm modified mode [ 'cargo.js', 436, 420 ]
+461 silly gunzTarPerm extractEntry some.js
+462 silly gunzTarPerm modified mode [ 'some.js', 436, 420 ]
+463 silly gunzTarPerm extractEntry waterfall.js
+464 silly gunzTarPerm modified mode [ 'waterfall.js', 436, 420 ]
+465 silly gunzTarPerm extractEntry someLimit.js
+466 silly gunzTarPerm modified mode [ 'someLimit.js', 436, 420 ]
+467 silly gunzTarPerm extractEntry autoInject.js
+468 silly gunzTarPerm modified mode [ 'autoInject.js', 436, 420 ]
+469 silly gunzTarPerm extractEntry someSeries.js
+470 silly gunzTarPerm modified mode [ 'someSeries.js', 436, 420 ]
+471 silly gunzTarPerm extractEntry auto.js
+472 silly gunzTarPerm modified mode [ 'auto.js', 436, 420 ]
+473 silly gunzTarPerm extractEntry sortBy.js
+474 silly gunzTarPerm modified mode [ 'sortBy.js', 436, 420 ]
+475 silly gunzTarPerm extractEntry asyncify.js
+476 silly gunzTarPerm modified mode [ 'asyncify.js', 436, 420 ]
+477 silly gunzTarPerm extractEntry timeout.js
+478 silly gunzTarPerm modified mode [ 'timeout.js', 436, 420 ]
+479 silly gunzTarPerm extractEntry applyEachSeries.js
+480 silly gunzTarPerm modified mode [ 'applyEachSeries.js', 436, 420 ]
+481 silly gunzTarPerm extractEntry times.js
+482 silly gunzTarPerm modified mode [ 'times.js', 436, 420 ]
+483 silly gunzTarPerm extractEntry applyEach.js
+484 silly gunzTarPerm modified mode [ 'applyEach.js', 436, 420 ]
+485 silly gunzTarPerm extractEntry timesLimit.js
+486 silly gunzTarPerm modified mode [ 'timesLimit.js', 436, 420 ]
+487 silly gunzTarPerm extractEntry apply.js
+488 silly gunzTarPerm modified mode [ 'apply.js', 436, 420 ]
+489 silly gunzTarPerm extractEntry whilst.js
+490 silly gunzTarPerm modified mode [ 'whilst.js', 436, 420 ]
+491 silly gunzTarPerm extractEntry timesSeries.js
+492 silly gunzTarPerm modified mode [ 'timesSeries.js', 436, 420 ]
+493 silly gunzTarPerm extractEntry transform.js
+494 silly gunzTarPerm modified mode [ 'transform.js', 436, 420 ]
+495 silly gunzTarPerm extractEntry unmemoize.js
+496 silly gunzTarPerm modified mode [ 'unmemoize.js', 436, 420 ]
+497 silly gunzTarPerm extractEntry iterator.js
+498 silly gunzTarPerm modified mode [ 'iterator.js', 436, 420 ]
+499 silly gunzTarPerm extractEntry internal/applyEach.js
+500 silly gunzTarPerm modified mode [ 'internal/applyEach.js', 436, 420 ]
+501 silly gunzTarPerm extractEntry internal/eachOfLimit.js
+502 silly gunzTarPerm modified mode [ 'internal/eachOfLimit.js', 436, 420 ]
+503 silly gunzTarPerm extractEntry internal/filter.js
+504 silly gunzTarPerm modified mode [ 'internal/filter.js', 436, 420 ]
+505 silly gunzTarPerm extractEntry internal/findGetResult.js
+506 silly gunzTarPerm modified mode [ 'internal/findGetResult.js', 436, 420 ]
+507 silly gunzTarPerm extractEntry internal/doSeries.js
+508 silly gunzTarPerm modified mode [ 'internal/doSeries.js', 436, 420 ]
+509 silly gunzTarPerm extractEntry internal/initialParams.js
+510 silly gunzTarPerm modified mode [ 'internal/initialParams.js', 436, 420 ]
+511 silly gunzTarPerm extractEntry internal/iterator.js
+512 silly gunzTarPerm modified mode [ 'internal/iterator.js', 436, 420 ]
+513 silly gunzTarPerm extractEntry internal/map.js
+514 silly gunzTarPerm modified mode [ 'internal/map.js', 436, 420 ]
+515 silly gunzTarPerm extractEntry internal/notId.js
+516 silly gunzTarPerm modified mode [ 'internal/notId.js', 436, 420 ]
+517 silly gunzTarPerm extractEntry internal/once.js
+518 silly gunzTarPerm modified mode [ 'internal/once.js', 436, 420 ]
+519 silly gunzTarPerm extractEntry internal/doParallelLimit.js
+520 silly gunzTarPerm modified mode [ 'internal/doParallelLimit.js', 436, 420 ]
+521 silly gunzTarPerm extractEntry internal/onlyOnce.js
+522 silly gunzTarPerm modified mode [ 'internal/onlyOnce.js', 436, 420 ]
+523 silly gunzTarPerm extractEntry internal/doParallel.js
+524 silly gunzTarPerm modified mode [ 'internal/doParallel.js', 436, 420 ]
+525 silly gunzTarPerm extractEntry internal/parallel.js
+526 silly gunzTarPerm modified mode [ 'internal/parallel.js', 436, 420 ]
+527 silly gunzTarPerm extractEntry internal/doLimit.js
+528 silly gunzTarPerm modified mode [ 'internal/doLimit.js', 436, 420 ]
+529 silly gunzTarPerm extractEntry internal/queue.js
+530 silly gunzTarPerm modified mode [ 'internal/queue.js', 436, 420 ]
+531 silly gunzTarPerm extractEntry internal/createTester.js
+532 silly gunzTarPerm modified mode [ 'internal/createTester.js', 436, 420 ]
+533 silly gunzTarPerm extractEntry internal/reject.js
+534 silly gunzTarPerm modified mode [ 'internal/reject.js', 436, 420 ]
+535 silly gunzTarPerm extractEntry internal/consoleFunc.js
+536 silly gunzTarPerm modified mode [ 'internal/consoleFunc.js', 436, 420 ]
+537 silly gunzTarPerm extractEntry internal/setImmediate.js
+538 silly gunzTarPerm modified mode [ 'internal/setImmediate.js', 436, 420 ]
+539 silly gunzTarPerm extractEntry internal/concat.js
+540 silly gunzTarPerm modified mode [ 'internal/concat.js', 436, 420 ]
+541 silly gunzTarPerm extractEntry internal/withoutIndex.js
+542 silly gunzTarPerm modified mode [ 'internal/withoutIndex.js', 436, 420 ]
+543 silly gunzTarPerm extractEntry internal/getIterator.js
+544 silly gunzTarPerm modified mode [ 'internal/getIterator.js', 436, 420 ]
+545 silly gunzTarPerm extractEntry dist/async.js
+546 silly gunzTarPerm modified mode [ 'dist/async.js', 436, 420 ]
+547 silly gunzTarPerm extractEntry dist/async.min.js
+548 silly gunzTarPerm modified mode [ 'dist/async.min.js', 436, 420 ]
+549 silly gunzTarPerm extractEntry bower.json
+550 silly gunzTarPerm modified mode [ 'bower.json', 436, 420 ]
+551 silly gunzTarPerm extractEntry CHANGELOG.md
+552 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+553 silly fetchAndShaCheck shasum 35e0aba17ad9f8cea35f712ef8cc445470f0740d
+554 verbose addTmpTarball /var/folders/4z/mzwx4fv14z17kl_472_mrjlr0000gn/T/npm-11952-f646dbc6/registry.npmjs.org/fibers/-/fibers-1.0.13.tgz not in flight; adding
+555 verbose addTmpTarball already have metadata; skipping unpack for fibers@1.0.13
+556 verbose correctMkdir /Users/HirokiSunagawa/.npm correctMkdir not in flight; initializing
+557 verbose unbuild node_modules/.staging/fibers-ec3c9016
+558 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/fibers-ec3c9016 is being purged from base /Users/HirokiSunagawa/Work/LUMO-P1
+559 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/fibers-ec3c9016
+560 verbose tar unpack /Users/HirokiSunagawa/.npm/fibers/1.0.13/package.tgz
+561 verbose tar unpacking to /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/fibers-ec3c9016
+562 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/fibers-ec3c9016 is being purged
+563 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/fibers-ec3c9016
+564 silly gunzTarPerm modes [ '755', '644' ]
+565 silly gunzTarPerm extractEntry package.json
+566 silly gunzTarPerm extractEntry .npmignore
+567 silly gunzTarPerm extractEntry README.md
+568 silly gunzTarPerm extractEntry LICENSE
+569 silly gunzTarPerm extractEntry quick-test.js
+570 silly gunzTarPerm extractEntry future.js
+571 silly gunzTarPerm extractEntry build.js
+572 silly gunzTarPerm extractEntry test.js
+573 silly gunzTarPerm extractEntry fibers.js
+574 silly gunzTarPerm extractEntry note.txt
+575 silly gunzTarPerm extractEntry binding.gyp
+576 silly gunzTarPerm extractEntry bin/.npmignore
+577 silly gunzTarPerm extractEntry bin/win32-x64-v8-5.0/fibers.node
+578 silly gunzTarPerm extractEntry bin/darwin-ia32-v8-4.6/fibers.node
+579 silly gunzTarPerm extractEntry bin/darwin-ia32-v8-5.0/fibers.node
+580 silly gunzTarPerm extractEntry bin/darwin-x64-v8-4.5/fibers.node
+581 silly gunzTarPerm extractEntry bin/darwin-x64-v8-4.6/fibers.node
+582 silly gunzTarPerm extractEntry bin/darwin-x64-v8-5.0/fibers.node
+583 silly gunzTarPerm extractEntry bin/linux-ia32-v8-4.5/fibers.node
+584 silly gunzTarPerm extractEntry bin/linux-ia32-v8-4.6/fibers.node
+585 silly gunzTarPerm extractEntry bin/linux-ia32-v8-5.0/fibers.node
+586 silly gunzTarPerm extractEntry bin/darwin-ia32-v8-4.5/fibers.node
+587 silly gunzTarPerm extractEntry bin/linux-x64-v8-4.6/fibers.node
+588 silly gunzTarPerm extractEntry bin/linux-x64-v8-5.0/fibers.node
+589 silly gunzTarPerm extractEntry bin/repl
+590 silly gunzTarPerm extractEntry bin/win32-ia32-v8-4.5/fibers.node
+591 silly gunzTarPerm extractEntry bin/win32-ia32-v8-4.6/fibers.node
+592 silly gunzTarPerm extractEntry bin/win32-ia32-v8-5.0/fibers.node
+593 silly gunzTarPerm extractEntry bin/win32-x64-v8-4.5/fibers.node
+594 silly gunzTarPerm extractEntry bin/win32-x64-v8-4.6/fibers.node
+595 http fetch 200 https://registry.npmjs.org/wiring-pi/-/wiring-pi-2.1.1.tgz
+596 silly gunzTarPerm extractEntry bin/linux-x64-v8-4.5/fibers.node
+597 silly gunzTarPerm extractEntry src/coroutine.cc
+598 silly gunzTarPerm extractEntry src/coroutine.h
+599 silly gunzTarPerm extractEntry src/fibers.cc
+600 silly gunzTarPerm extractEntry src/libcoro/README
+601 silly gunzTarPerm extractEntry src/libcoro/LICENSE
+602 silly gunzTarPerm extractEntry src/libcoro/conftest.c
+603 silly gunzTarPerm extractEntry src/libcoro/coro.c
+604 silly gunzTarPerm extractEntry src/libcoro/coro.h
+605 silly gunzTarPerm extractEntry test/already-running.js
+606 silly gunzTarPerm extractEntry test/exit.js
+607 silly gunzTarPerm extractEntry test/fibonacci.js
+608 silly gunzTarPerm extractEntry test/finish-multiple.js
+609 silly gunzTarPerm extractEntry test/future-exception.js
+610 silly gunzTarPerm extractEntry test/exec.js
+611 silly gunzTarPerm extractEntry test/illegal-yield.js
+612 silly gunzTarPerm extractEntry test/pool.js
+613 silly gunzTarPerm extractEntry test/process-title.js
+614 silly fetchAndShaCheck shasum fc9414651361101560d210f8fa0fb797c0ab7df0
+615 verbose addTmpTarball /var/folders/4z/mzwx4fv14z17kl_472_mrjlr0000gn/T/npm-11952-f646dbc6/registry.npmjs.org/wiring-pi/-/wiring-pi-2.1.1.tgz not in flight; adding
+616 verbose addTmpTarball already have metadata; skipping unpack for wiring-pi@2.1.1
+617 verbose correctMkdir /Users/HirokiSunagawa/.npm correctMkdir not in flight; initializing
+618 silly gunzTarPerm extractEntry test/stack-overflow.js
+619 silly gunzTarPerm extractEntry test/stack-overflow2.js
+620 silly gunzTarPerm extractEntry test/current.js
+621 silly gunzTarPerm extractEntry test/stack-overflow3.js
+622 silly gunzTarPerm extractEntry test/child-process.js
+623 silly gunzTarPerm extractEntry test/started.js
+624 silly gunzTarPerm extractEntry test/bad-context.js
+625 silly gunzTarPerm extractEntry test/unwind.js
+626 silly gunzTarPerm extractEntry test/future.js
+627 verbose unbuild node_modules/.staging/wiring-pi-39284224
+628 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/wiring-pi-39284224 is being purged from base /Users/HirokiSunagawa/Work/LUMO-P1
+629 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/wiring-pi-39284224
+630 verbose tar unpack /Users/HirokiSunagawa/.npm/wiring-pi/2.1.1/package.tgz
+631 verbose tar unpacking to /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/wiring-pi-39284224
+632 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/wiring-pi-39284224 is being purged
+633 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/wiring-pi-39284224
+634 silly gunzTarPerm modes [ '755', '644' ]
+635 silly gunzTarPerm extractEntry package.json
+636 silly gunzTarPerm extractEntry .npmignore
+637 silly gunzTarPerm extractEntry README.md
+638 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/async-559448cc/node_modules is being purged
+639 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/async-559448cc/node_modules
+640 silly gunzTarPerm extractEntry CONTRIBUTING.md
+641 silly gunzTarPerm extractEntry DOCUMENTATION.md
+642 silly gunzTarPerm extractEntry src/wiringPiI2C.cc
+643 silly gunzTarPerm extractEntry src/addon.cc
+644 silly gunzTarPerm extractEntry src/devlib/maxdetect.cc
+645 silly gunzTarPerm extractEntry src/devlib/devlib.cc
+646 silly gunzTarPerm extractEntry src/devlib/ds1302.cc
+647 silly gunzTarPerm extractEntry src/devlib/ds1302.h
+648 silly gunzTarPerm extractEntry src/devlib/gertboard.cc
+649 silly gunzTarPerm extractEntry src/devlib/gertboard.h
+650 silly gunzTarPerm extractEntry src/devlib/lcd.cc
+651 silly gunzTarPerm extractEntry src/devlib/lcd.h
+652 silly gunzTarPerm extractEntry src/devlib/lcd128x64.cc
+653 silly gunzTarPerm extractEntry src/devlib/lcd128x64.h
+654 silly gunzTarPerm extractEntry src/devlib/devlib.h
+655 silly gunzTarPerm extractEntry src/devlib/maxdetect.h
+656 silly gunzTarPerm extractEntry src/devlib/piFace.cc
+657 silly gunzTarPerm extractEntry src/devlib/piFace.h
+658 silly gunzTarPerm extractEntry src/devlib/piGlow.cc
+659 silly gunzTarPerm extractEntry src/devlib/piGlow.h
+660 silly gunzTarPerm extractEntry src/devlib/piNes.cc
+661 silly gunzTarPerm extractEntry src/devlib/piNes.h
+662 silly gunzTarPerm extractEntry src/devlib/tcs34725.cc
+663 silly gunzTarPerm extractEntry src/devlib/tcs34725.h
+664 silly gunzTarPerm extractEntry src/extensions/mcp23s17.h
+665 silly gunzTarPerm extractEntry src/extensions/dac7678.cc
+666 silly gunzTarPerm extractEntry src/extensions/drcSerial.cc
+667 silly gunzTarPerm extractEntry src/extensions/drcSerial.h
+668 silly gunzTarPerm extractEntry src/extensions/extensions.cc
+669 silly gunzTarPerm extractEntry src/extensions/extensions.h
+670 silly gunzTarPerm extractEntry src/extensions/max31855.cc
+671 silly gunzTarPerm extractEntry src/extensions/max31855.h
+672 silly gunzTarPerm extractEntry src/extensions/max5322.cc
+673 silly gunzTarPerm extractEntry src/extensions/max5322.h
+674 silly gunzTarPerm extractEntry src/extensions/mcp23008.cc
+675 silly gunzTarPerm extractEntry src/extensions/mcp23008.h
+676 silly gunzTarPerm extractEntry src/extensions/mcp23016.cc
+677 silly gunzTarPerm extractEntry src/extensions/mcp23016.h
+678 silly gunzTarPerm extractEntry src/extensions/mcp23017.cc
+679 silly gunzTarPerm extractEntry src/extensions/mcp23017.h
+680 silly gunzTarPerm extractEntry src/extensions/mcp23s08.cc
+681 silly gunzTarPerm extractEntry src/extensions/mcp23s08.h
+682 silly gunzTarPerm extractEntry src/extensions/mcp23s17.cc
+683 silly gunzTarPerm extractEntry src/extensions/dac7678.h
+684 silly gunzTarPerm extractEntry src/extensions/mcp3002.cc
+685 silly gunzTarPerm extractEntry src/extensions/mcp3002.h
+686 silly gunzTarPerm extractEntry src/extensions/mcp3004.cc
+687 silly gunzTarPerm extractEntry src/extensions/mcp3004.h
+688 silly gunzTarPerm extractEntry src/extensions/mcp3422.cc
+689 silly gunzTarPerm extractEntry src/extensions/mcp3422.h
+690 silly gunzTarPerm extractEntry src/extensions/mcp4802.cc
+691 silly gunzTarPerm extractEntry src/extensions/mcp4802.h
+692 silly gunzTarPerm extractEntry src/extensions/pca9685.cc
+693 silly gunzTarPerm extractEntry src/extensions/pca9685.h
+694 silly gunzTarPerm extractEntry src/extensions/pcf8574.cc
+695 silly gunzTarPerm extractEntry src/extensions/pcf8574.h
+696 silly gunzTarPerm extractEntry src/extensions/pcf8591.cc
+697 silly gunzTarPerm extractEntry src/extensions/pcf8591.h
+698 silly gunzTarPerm extractEntry src/extensions/sn3218.cc
+699 silly gunzTarPerm extractEntry src/extensions/sn3218.h
+700 silly gunzTarPerm extractEntry src/extensions/sr595.cc
+701 silly gunzTarPerm extractEntry src/extensions/sr595.h
+702 silly gunzTarPerm extractEntry src/softPwm.cc
+703 silly gunzTarPerm extractEntry src/softPwm.h
+704 silly gunzTarPerm extractEntry src/softServo.cc
+705 silly gunzTarPerm extractEntry src/softServo.h
+706 silly gunzTarPerm extractEntry src/softTone.cc
+707 silly gunzTarPerm extractEntry src/softTone.h
+708 silly gunzTarPerm extractEntry src/wiringPi.cc
+709 silly gunzTarPerm extractEntry src/wiringPi.h
+710 silly gunzTarPerm extractEntry src/addon.h
+711 silly gunzTarPerm extractEntry src/wiringPiI2C.h
+712 silly gunzTarPerm extractEntry src/wiringPiISR.cc
+713 silly gunzTarPerm extractEntry src/wiringPiISR.h
+714 silly gunzTarPerm extractEntry src/wiringPiSPI.cc
+715 silly gunzTarPerm extractEntry src/wiringPiSPI.h
+716 silly gunzTarPerm extractEntry src/wiringSerial.cc
+717 silly gunzTarPerm extractEntry src/wiringSerial.h
+718 silly gunzTarPerm extractEntry src/wiringShift.cc
+719 silly gunzTarPerm extractEntry src/wiringShift.h
+720 silly gunzTarPerm extractEntry src/wpi.cc
+721 silly gunzTarPerm extractEntry src/wpi.h
+722 silly gunzTarPerm extractEntry .gitmodules
+723 silly gunzTarPerm extractEntry examples/blink.js
+724 silly gunzTarPerm extractEntry examples/pwm.js
+725 silly gunzTarPerm extractEntry install.sh
+726 silly gunzTarPerm extractEntry lib/exports.js
+727 silly gunzTarPerm extractEntry CHANGELOG.md
+728 silly gunzTarPerm extractEntry patchs/devLib_Makefile.patch
+729 silly gunzTarPerm extractEntry patchs/gpio_Makefile.patch
+730 silly gunzTarPerm extractEntry binding.gyp
+731 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/fibers-ec3c9016/node_modules is being purged
+732 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/fibers-ec3c9016/node_modules
+733 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/wiring-pi-39284224/node_modules is being purged
+734 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/wiring-pi-39284224/node_modules
+735 silly doParallel preinstall 6
+736 silly preinstall async@2.0.0-rc.6 /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/async-559448cc
+737 info lifecycle async@2.0.0-rc.6~preinstall: async@2.0.0-rc.6
+738 silly preinstall fibers@1.0.13 /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/fibers-ec3c9016
+739 info lifecycle fibers@1.0.13~preinstall: fibers@1.0.13
+740 silly preinstall mcp-adc@0.1.0 /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/mcp-adc-0d76f1a2
+741 info lifecycle mcp-adc@0.1.0~preinstall: mcp-adc@0.1.0
+742 silly preinstall sleep@3.0.1 /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/sleep-cae76961
+743 info lifecycle sleep@3.0.1~preinstall: sleep@3.0.1
+744 silly preinstall socket.io@1.4.8 /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/socket.io-67eff514
+745 info lifecycle socket.io@1.4.8~preinstall: socket.io@1.4.8
+746 silly preinstall wiring-pi@2.1.1 /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/wiring-pi-39284224
+747 info lifecycle wiring-pi@2.1.1~preinstall: wiring-pi@2.1.1
+748 silly lifecycle async@2.0.0-rc.6~preinstall: no script for preinstall, continuing
+749 silly lifecycle fibers@1.0.13~preinstall: no script for preinstall, continuing
+750 silly lifecycle mcp-adc@0.1.0~preinstall: no script for preinstall, continuing
+751 silly lifecycle sleep@3.0.1~preinstall: no script for preinstall, continuing
+752 silly lifecycle socket.io@1.4.8~preinstall: no script for preinstall, continuing
+753 silly lifecycle wiring-pi@2.1.1~preinstall: no script for preinstall, continuing
+754 silly doReverseSerial remove 2
+755 silly remove /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/pubnub
+756 verbose unbuild node_modules/pubnub
+757 info lifecycle pubnub@3.15.1~preuninstall: pubnub@3.15.1
+758 silly lifecycle pubnub@3.15.1~preuninstall: no script for preuninstall, continuing
+759 info lifecycle pubnub@3.15.1~uninstall: pubnub@3.15.1
+760 silly lifecycle pubnub@3.15.1~uninstall: no script for uninstall, continuing
+761 verbose unbuild rmStuff pubnub@3.15.1 from /Users/HirokiSunagawa/Work/LUMO-P1/node_modules
+762 info lifecycle pubnub@3.15.1~postuninstall: pubnub@3.15.1
+763 silly lifecycle pubnub@3.15.1~postuninstall: no script for postuninstall, continuing
+764 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/pubnub is being purged from base /Users/HirokiSunagawa/Work/LUMO-P1
+765 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/pubnub
+766 silly vacuum-fs purging /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/pubnub
+767 silly vacuum-fs quitting because other entries in /Users/HirokiSunagawa/Work/LUMO-P1/node_modules
+768 silly remove /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/agentkeepalive
+769 verbose unbuild node_modules/agentkeepalive
+770 info lifecycle agentkeepalive@0.2.4~preuninstall: agentkeepalive@0.2.4
+771 silly lifecycle agentkeepalive@0.2.4~preuninstall: no script for preuninstall, continuing
+772 info lifecycle agentkeepalive@0.2.4~uninstall: agentkeepalive@0.2.4
+773 silly lifecycle agentkeepalive@0.2.4~uninstall: no script for uninstall, continuing
+774 verbose unbuild rmStuff agentkeepalive@0.2.4 from /Users/HirokiSunagawa/Work/LUMO-P1/node_modules
+775 info lifecycle agentkeepalive@0.2.4~postuninstall: agentkeepalive@0.2.4
+776 silly lifecycle agentkeepalive@0.2.4~postuninstall: no script for postuninstall, continuing
+777 silly gentlyRm /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/agentkeepalive is being purged from base /Users/HirokiSunagawa/Work/LUMO-P1
+778 verbose gentlyRm don't care about contents; nuking /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/agentkeepalive
+779 silly vacuum-fs purging /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/agentkeepalive
+780 silly vacuum-fs quitting because other entries in /Users/HirokiSunagawa/Work/LUMO-P1/node_modules
+781 silly doSerial move 0
+782 silly doSerial finalize 6
+783 silly finalize /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/async
+784 silly finalize /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/fibers
+785 silly finalize /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/mcp-adc
+786 silly finalize /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/sleep
+787 silly finalize /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/socket.io
+788 silly finalize /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/wiring-pi
+789 silly doSerial build 6
+790 silly build async@2.0.0-rc.6
+791 info linkStuff async@2.0.0-rc.6
+792 silly linkStuff async@2.0.0-rc.6 has /Users/HirokiSunagawa/Work/LUMO-P1/node_modules as its parent node_modules
+793 verbose linkBins async@2.0.0-rc.6
+794 verbose linkMans async@2.0.0-rc.6
+795 silly build fibers@1.0.13
+796 info linkStuff fibers@1.0.13
+797 silly linkStuff fibers@1.0.13 has /Users/HirokiSunagawa/Work/LUMO-P1/node_modules as its parent node_modules
+798 verbose linkBins fibers@1.0.13
+799 verbose linkMans fibers@1.0.13
+800 silly build mcp-adc@0.1.0
+801 info linkStuff mcp-adc@0.1.0
+802 silly linkStuff mcp-adc@0.1.0 has /Users/HirokiSunagawa/Work/LUMO-P1/node_modules as its parent node_modules
+803 verbose linkBins mcp-adc@0.1.0
+804 verbose linkMans mcp-adc@0.1.0
+805 silly build sleep@3.0.1
+806 info linkStuff sleep@3.0.1
+807 silly linkStuff sleep@3.0.1 has /Users/HirokiSunagawa/Work/LUMO-P1/node_modules as its parent node_modules
+808 verbose linkBins sleep@3.0.1
+809 verbose linkMans sleep@3.0.1
+810 silly build socket.io@1.4.8
+811 info linkStuff socket.io@1.4.8
+812 silly linkStuff socket.io@1.4.8 has /Users/HirokiSunagawa/Work/LUMO-P1/node_modules as its parent node_modules
+813 verbose linkBins socket.io@1.4.8
+814 verbose linkMans socket.io@1.4.8
+815 silly build wiring-pi@2.1.1
+816 info linkStuff wiring-pi@2.1.1
+817 silly linkStuff wiring-pi@2.1.1 has /Users/HirokiSunagawa/Work/LUMO-P1/node_modules as its parent node_modules
+818 verbose linkBins wiring-pi@2.1.1
+819 verbose linkMans wiring-pi@2.1.1
+820 silly doSerial global-link 0
+821 silly doParallel update-linked 0
+822 silly doSerial install 6
+823 silly install async@2.0.0-rc.6 /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/async-559448cc
+824 info lifecycle async@2.0.0-rc.6~install: async@2.0.0-rc.6
+825 silly lifecycle async@2.0.0-rc.6~install: no script for install, continuing
+826 silly install fibers@1.0.13 /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/fibers-ec3c9016
+827 info lifecycle fibers@1.0.13~install: fibers@1.0.13
+828 verbose lifecycle fibers@1.0.13~install: unsafe-perm in lifecycle true
+829 verbose lifecycle fibers@1.0.13~install: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/HirokiSunagawa/Work/LUMO-P1/node_modules/fibers/node_modules/.bin:/Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.bin:/usr/local/bin:/Users/HirokiSunagawa/anaconda/bin:/Users/HirokiSunagawa/.rbenv/shims:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+830 verbose lifecycle fibers@1.0.13~install: CWD: /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/fibers
+831 silly lifecycle fibers@1.0.13~install: Args: [ '-c', 'node build.js || nodejs build.js' ]
+832 silly lifecycle fibers@1.0.13~install: Returned: code: 0  signal: null
+833 silly install mcp-adc@0.1.0 /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/mcp-adc-0d76f1a2
+834 info lifecycle mcp-adc@0.1.0~install: mcp-adc@0.1.0
+835 silly lifecycle mcp-adc@0.1.0~install: no script for install, continuing
+836 silly install sleep@3.0.1 /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging/sleep-cae76961
+837 info lifecycle sleep@3.0.1~install: sleep@3.0.1
+838 verbose lifecycle sleep@3.0.1~install: unsafe-perm in lifecycle true
+839 verbose lifecycle sleep@3.0.1~install: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/HirokiSunagawa/Work/LUMO-P1/node_modules/sleep/node_modules/.bin:/Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.bin:/usr/local/bin:/Users/HirokiSunagawa/anaconda/bin:/Users/HirokiSunagawa/.rbenv/shims:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+840 verbose lifecycle sleep@3.0.1~install: CWD: /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/sleep
+841 silly lifecycle sleep@3.0.1~install: Args: [ '-c', 'node-gyp rebuild' ]
+842 silly lifecycle sleep@3.0.1~install: Returned: code: 1  signal: null
+843 info lifecycle sleep@3.0.1~install: Failed to exec install script
+844 verbose unlock done using /Users/HirokiSunagawa/.npm/_locks/staging-900643cc3e7fbc4a.lock for /Users/HirokiSunagawa/Work/LUMO-P1/node_modules/.staging
+845 silly rollbackFailedOptional Starting
+846 silly rollbackFailedOptional Finishing
+847 silly runTopLevelLifecycles Starting
+848 silly runTopLevelLifecycles Finishing
+849 silly install printInstalled
+850 warn enoent ENOENT: no such file or directory, open '/Users/HirokiSunagawa/Work/LUMO-P1/package.json'
+851 warn LUMO-P1 No description
+852 warn LUMO-P1 No repository field.
+853 warn LUMO-P1 No README data
+854 warn LUMO-P1 No license field.
+855 verbose stack Error: sleep@3.0.1 install: `node-gyp rebuild`
+855 verbose stack Exit status 1
+855 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:245:16)
+855 verbose stack     at emitTwo (events.js:87:13)
+855 verbose stack     at EventEmitter.emit (events.js:172:7)
+855 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+855 verbose stack     at emitTwo (events.js:87:13)
+855 verbose stack     at ChildProcess.emit (events.js:172:7)
+855 verbose stack     at maybeClose (internal/child_process.js:827:16)
+855 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+856 verbose pkgid sleep@3.0.1
+857 verbose cwd /Users/HirokiSunagawa/Work/LUMO-P1
+858 error Darwin 15.6.0
+859 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "uninstall" "pubnub"
+860 error node v4.4.3
+861 error npm  v3.9.5
+862 error code ELIFECYCLE
+863 error sleep@3.0.1 install: `node-gyp rebuild`
+863 error Exit status 1
+864 error Failed at the sleep@3.0.1 install script 'node-gyp rebuild'.
+864 error Make sure you have the latest version of node.js and npm installed.
+864 error If you do, this is most likely a problem with the sleep package,
+864 error not with npm itself.
+864 error Tell the author that this fails on your system:
+864 error     node-gyp rebuild
+864 error You can get information on how to open an issue for this project with:
+864 error     npm bugs sleep
+864 error Or if that isn't available, you can get their info via:
+864 error     npm owner ls sleep
+864 error There is likely additional logging output above.
+865 verbose exit [ 1, true ]
