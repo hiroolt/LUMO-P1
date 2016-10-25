@@ -22,22 +22,22 @@ io.on('connection', function (socket) {
 
     socket.on('sense_from_channel1', function (msg) {
 	console.log('Data from channel1');
-	io.emit('sense_to_channel2', msg)
+	io.volatile.emit('sense_to_channel2', msg)
     });
 
     socket.on('sense_from_channel2', function (msg) {
 	console.log('Data from channel2');
-	io.emit('sense_to_channel1', msg)
+	io.volatile.emit('sense_to_channel1', msg)
     });
 
     socket.on('audio_from_channel1', function (msg) {
 	//console.log('Data from channel1');
-	io.emit('audio_to_channel2', msg)
+	io.volatile.emit('audio_to_channel2', msg)
     });
 
     socket.on('audio_from_channel2', function (msg) {
 	//console.log('Data from channel2');
-	io.emit('audio_to_channel1', msg)
+	io.volatile.emit('audio_to_channel1', msg)
     });
 
     socket.on('disconnect', function () {

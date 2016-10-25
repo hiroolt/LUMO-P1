@@ -1,8 +1,20 @@
 "use strict";
 var io = require('socket.io-client');
-var socket = io('http://"your ip address":7060').connect();
+var socket = io('http://******').connect();
 var wpi = require('wiring-pi');
 var async = require('async');
+//var heapdump = require('heapdump'); 
+
+//setup global variables
+var sensorValue = 0;
+var ledValue = 0;
+var lastSensorValue = 0;
+var lastLEDValue = 0;
+var receivedValue = 0;
+var SMax = 600;
+var SMin = 70;
+var SenseInterval = 500;
+//var idx = 0;
 
 // Child Process
 var cp = require('child_process');
@@ -12,17 +24,19 @@ socket.on('connection', function(socket){
     console.log('connection established');
 });
 
-//setup wiringpi
+//setup wiringpi for LED control
 wpi.setup('gpio');
 var pin = 12;
+var pin2 = 5;
 wpi.pinMode(pin, wpi.PWM_OUTPUT);
+wpi.softPwmCreate(pin2, 0, 100);
 
 //setup writeLED function
 function writeLED(before, after) {
     if((before !== 0) && (after !== 0)) {
         var val = before;
         if (before < after) {
-            var diff = Math.round(100/(after - before));
+            var diff = Math.round(SenseInterval/(after - before));
             //console.log(diff);
             async.whilst(
                 function() { return val  < after; },
@@ -37,7 +51,7 @@ function writeLED(before, after) {
                     //console.log("end");
                 });
         } else {
-            var diff = Math.round(100/(before - after));
+            var diff = Math.round(SenseInterval/(before - after));
             //console.log(diff);
             async.whilst(
                 function() { return val  > after; },
@@ -64,6 +78,7 @@ var avconv = cp.spawn('avconv', [
     '-ac', '2',
     '-ar', '44100',
     '-i', 'hw:0,0',
+    '-cutoff', '15k',
     //'-t', '1',
     //'-timelimit', '3',
     '-f', 'mp3',
@@ -73,92 +88,73 @@ var avconv = cp.spawn('avconv', [
 
 var mpg123 = cp.spawn('mpg123', ['-']);
 
-//setup global variables
-var sensorValue = 0;
-var ledValue = 0;
-var lastSensorValue = 0;
-var lastLEDValue = 0;
-var receivedVal = 0;
-var buffersize1 = 100;
-var buffersize2 = 0;
-var chunk = '';
-var audioBuffer = [];
-var LEDbias = 1.6;
 
-// Transmit sensor value
+// get sensor value and send it to server
 setInterval(function(){
-    var rawSensorString = cp.execSync('sudo python ./Adafruit_Python_MCP3008/examples/simpletest.py').toString('ascii');
+//setTimeout(function(){
+    var rawSensorString = cp.execSync('sudo python /home/pi/Work/LUMO/LUMO-P1/Adafruit_Python_MCP3008/examples/simpletest.py').toString('ascii');
     var rawSensorValue = parseInt(rawSensorString);
-    if (((lastSensorValue + 30) < rawSensorValue) || (rawSensorValue < (lastSensorValue - 30))){
-        sensorValue = rawSensorValue;
-        console.log("Original sensorValue is " + sensorValue);
+    if (((lastSensorValue + 5) < rawSensorValue) || (rawSensorValue < (lastSensorValue - 5))){
+	sensorValue = Math.round((1023*rawSensorValue)/(SMax-SMin) - (1023*SMin)/(SMax-SMin));
+        //console.log("Modified sensorValue is " + sensorValue);
+	if (sensorValue > 1023) {
+	    wpi.softPwmWrite(pin2, 100);
+	} else if (sensorValue < 0) {
+	    wpi.softPwmWrite(pin2, 0);
+	} else {
+	    var PWMval = Math.round(sensorValue*100/1024);
+	    wpi.softPwmWrite(pin2, PWMval);
+	}
+	
+	if (sensorValue > 30){  
+            console.log("Mic: on, Speaker: on");                                                                                
+	    avconv.kill('SIGSTOP');
+	    cp.execSync("amixer $1 -Dhw:sndrpiwsp cset name='Speaker Digital Volume' 130");
+        }  else {                                                                                       
+            console.log("Mic: muted, Speaker: off");
+	    avconv.kill('SIGCONT');	                                                     
+	    cp.execSync("amixer $1 -Dhw:sndrpiwsp cset name='Speaker Digital Volume' 0");
+        };
 	socket.emit('sense_from_channel1', sensorValue);
-        lastSensorValue = sensorValue;
+        //lastSensorValue = sensorValue;
+	//idx++;
     }
-}, 100);
+}, SenseInterval);
 
-// Receive sensor value from the other device/ Write LED value
+
+// receive sensor value from server and write it on LED
 socket.on('sense_to_channel1', function(rcvValue){
-    receivedVal = rcvValue;
-    if (receivedVal < 50){
+    ledValue = rcvValue;
+    if (ledValue > 1023) {
+	writeLED(lastLEDValue, 1023);
+	lastLEDValue = 1023;
+	console.log("Set sensor Value as Max")
+    } else if (ledValue < 0){
 	writeLED(lastLEDValue, 0);
 	lastLEDValue = 0;
-	console.log("Set sensor Value as zero")
+	console.log("Set sensor Value as Min")
     } else {
-	ledValue = Math.round(receivedVal * LEDbias);
 	writeLED(lastLEDValue, ledValue);
 	lastLEDValue = ledValue;
 	console.log("LED  Value is : " + ledValue);
-	if ((lastSensorValue > 400) && (receivedVal > 400)){
-	    console.log("Volume: 160");
-	    cp.execSync("amixer $1 -Dhw:sndrpiwsp cset name='Speaker Digital Volume' 160");
-	} else if ((lastSensorValue > 320) && (receivedVal > 320)){
-	    console.log("Volume: 140");
-	    cp.execSync("amixer $1 -Dhw:sndrpiwsp cset name='Speaker Digital Volume' 140");
-	} else if ((lastSensorValue > 250) && (receivedVal > 250)){
-	    console.log("Volume: 100");
-	    cp.execSync("amixer $1 -Dhw:sndrpiwsp cset name='Speaker Digital Volume' 100");
-	} else {
-	    console.log("Volume: muted");
-	    cp.execSync("amixer $1 -Dhw:sndrpiwsp cset name='Speaker Digital Volume' 0");
-	};
     };
 });
 
-// Turn on speaker
+//receive audio data from server and pass it to mpg123 as stdout
 socket.on('audio_to_channel1', function(audiodata){
-    //console.log("VoIP receiver is on");
-    audioBuffer.push([Buffer.from(audiodata.time), Buffer.from(audiodata.data, 'base64').toString('binary')]);
-    // if buffer array is greater than specific value, sort it. Then write to mpg123 stdin
-    if (audioBuffer.length > buffersize2) {
-	audioBuffer.sort(
-	    function(a,b){
-		return (a[0] < b[0] ? -1 : 1);
-	    }
-	);
-	var i = 0;
-	while(i < audioBuffer.length) {
-	    mpg123.stdin.write(audioBuffer[i][1], 'binary');
-	    i = i + 1;
-	};
-	audioBuffer = [];
-    };
+    //avconv.kill('SIGSTOP');
+    var buf = Buffer.from(audiodata.data, 'base64').toString('binary');
+    mpg123.stdin.write(buf, 'binary');
 });
 
-// Turn on microphone
-
+//record from mic and send it to server
 avconv.stdout.on('data', function(data) {
-    var buf = new Buffer.from(data, 'binary').toString('base64');
-    chunk += buf;
-    if (chunk.length > buffersize1) {
-	// Convert to JSON format
-	var audiodata = {};
-	audiodata.time = JSON.stringify(new Date());
-	audiodata.data = chunk;
-	chunk = '';
-	socket.emit('audio_from_channel1', audiodata);
-    };
+    var buf = Buffer.from(data, 'binary').toString('base64');
+    var audiodata = {};
+    audiodata.data = buf;
+    socket.emit('audio_from_channel1', audiodata);
 });
+
 avconv.stderr.on('data', function (data) {
     //console.log('stderr: ' + data);
 });
@@ -166,3 +162,42 @@ avconv.on('exit', function (code) {
     console.log('child process exited with code ' + code);
     process.exit();
 });
+
+
+// control volume
+setInterval(function(){
+    var rawMicString = cp.execSync("/home/pi/Work/LUMO/LUMO-P1/getAudioLevel");
+    var rawMicValue = parseInt(rawMicString);
+    console.log("Mic Value is " + rawMicValue);
+    if (rawMicValue == 0){
+	console.log("Mic Volume has not changed");
+    } else {
+	if (rawMicValue > 40000) {
+	    cp.execSync("amixer $1 -Dhw:sndrpiwsp cset name='Speaker Digital Volume' 60");
+	} else {
+	    if (rawMicValue > 27000) {
+		cp.execSync("amixer $1 -Dhw:sndrpiwsp cset name='Speaker Digital Volume' 130");
+	    } else if (rawMicValue > 24000) {
+		cp.execSync("amixer $1 -Dhw:sndrpiwsp cset name='Speaker Digital Volume' 140");
+	    } else if (rawMicValue > 18000) {
+		cp.execSync("amixer $1 -Dhw:sndrpiwsp cset name='Speaker Digital Volume' 150");
+	    } else {
+		cp.execSync("amixer $1 -Dhw:sndrpiwsp cset name='Speaker Digital Volume' 160");
+	    }
+	}
+    }
+}, 300);
+
+
+//check memory leak issue
+/*
+setInterval(function(){
+    heapdump.writeSnapshot(function(err, filename) {
+	console.log('dump written to', filename);
+    });
+}, 900000);
+
+setInterval(function(){
+    console.log("Counter of Sender: " + idx);
+}, 300000);
+*/
